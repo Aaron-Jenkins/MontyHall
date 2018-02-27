@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="scripts/game.js"></script>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
     <title>MontyHall</title>
 </head>
-<body onload="main()">
-
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Monty Hall Game</h1>
+    </header>
+    <section>
+        <p>switch wins: <span id="switch_wins"></span></p>
+        <p>stick wins: <span id="stick_wins"></span></p>
+        <p>
+            <button onclick="main()">Play Game</button>
+            <span><button onclick="multi()">Play Game x times</button></span>
+            <span>
+                <input id="times" type="number">
+            </span>
+        </p>
+    </section>
+</div>
 </body>
 </html>
+

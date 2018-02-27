@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+}
+
+p {
+    font-size: 35px;
+}
+button {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: white;
+    text-decoration: none;
+}
+
+input {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}

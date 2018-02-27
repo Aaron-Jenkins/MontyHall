@@ -29,8 +29,9 @@ function main() {
     testSwitch();
 
     console.log('Switch Wins: ' + switchWins)
+    document.getElementById('switch_wins').innerHTML = switchWins;
     console.log('Stick Wins: ' + stickWins)
-
+    document.getElementById('stick_wins').innerHTML = stickWins;
 }
 
 function getRandomArbitrary(min, max) {
@@ -80,5 +81,12 @@ function switchDoor() {
         } else {
             return 0;
         }
+    }
+}
+
+function multi() {
+   var x = document.getElementById('times').value;
+   for (var i = 0; i < x; i++) {
+       main();
     }
 }
